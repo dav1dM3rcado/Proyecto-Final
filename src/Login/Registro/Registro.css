@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+.Registro {
+  min-width: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(rgba(5, 7, 12, 0.60), rgba(5, 7, 12, 0.60)),
+    url(../../Assets/Img/imagenLogin1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+
+
+.RForm {
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+
+}
+
+
+.Rlabel {
+  color: white;
+}
+
+
+
+/* Leyenda de error */
+.Rtext {
+  color: #bb2929;
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+
+
+}
+
+.TituloR {
+  color: #feba0b;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 100px;
+}
+
+.ImputiC{
+    color: #1ed12d;
+	position: relative;
+}
+
+.ImputR{
+	width: 100%;
+	background: white;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10 px;
+	transition:  .3s ease all;
+	border: 3px solid transparent;
+}
+
+.ImputR:focus{
+border:  3px solid;
+border-color: #feba0b;
+outline: none;
+box-shadow:  3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+
+.Icon1{
+position: absolute;
+right: 10px;
+bottom: 14px;
+font-size: 16px;
+
+}
+
+.form-check-input:checked{
+background-color:  #feba0b;
+border-color: black;
+}
+
+.form-check{
+color: white;
+font-weight: 750;
+}
+
+.Icon2{
+color: #bb2929;
+}
+
+.Label-Alert{
+color: #bb2929;
+font-weight: 750;
+font-size: 30px;
+width: 100%;
+text-align: center;
+
+}
+
+/*Boton enviar del formulario */
+.btn-enviar {
+	background-color: #feba0b;
+	color: black ;
+	width: 30%;
+	font-weight: bold;
+	border: none;
+	border: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.btn-enviar:hover{
+background-color: black;
+color: white;	
+box-shadow: 3px 0 px 30 rgba(163, 163, 163, 1);
+}
+  
+

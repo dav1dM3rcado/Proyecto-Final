@@ -1,8 +1,17 @@
+import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import Registro from './Login/Registro/Registro.js';
+
 
 function App() {
-  return <div></div>;
+  return (
+
+    <div className='Registro'>
+      <Registro />
+    </div>
+
+
+  )
 }
 
 export default App;
