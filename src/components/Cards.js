@@ -11,7 +11,7 @@ const cards = [
     title: "Plan Inicial",
     image: image1,
     url: "https://www.google.com.ar/?gfe_rd=cr&ei=MceQVdD_Fqqk8wetmYH4Bw",
-    text: "Enfermedad y accidente (constultas,estudios,medicamentos y cirugia)",
+    text: "Enfermedad y accidente (constultas,estudios,medicamentos y cirugia) Para conocer mas beneficios Plan Iinical presione Go to Plan ",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const cards = [
     title: "Plan Premiun",
     image: image3,
     url: "https://www.google.com.ar/?gfe_rd=cr&ei=MceQVdD_Fqqk8wetmYH4Bw",
-    text: "Enfermedad y accidente (consultas,estudios,medicamentos y cirugia) Reclamos por daños a tercero Controles-Vacunas-Pipetas Fallecimento Belleza y Bienestar",
+    text: "Enfermedad y accidente (consultas,estudios,medicamentos y cirugia) Reclamos por daños a tercero Controles-Vacunas-Pipetas Fallecimento Belleza ",
   },
 ];
 
