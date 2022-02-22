@@ -2,8 +2,7 @@ import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from './layout/Navigation';
 import Footer from './layout/Footer';
-import Registro from './Pages/Login/Registro/Registro';
-
+import Registro from './Pages/Login/Tabla de Registro/Registro';
 import Ingreso from './Pages/Login/Ingreso/Ingreso';
 import TablaTurnos from './Pages/TablaTurnos/TablaTurnos';
 import CrearTurno from './Pages/CrearTurno/CrearTurno';
@@ -11,7 +10,7 @@ import EditarTurno from './Pages/EditarTurno/EditarTurno';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Home from "./Pages/Home/Home";
+import Home from "./home/Home";
 
 
 function App() {
@@ -59,6 +58,8 @@ function App() {
     </BrowserRouter>
 
   </div>
+
+
 
   )
 }

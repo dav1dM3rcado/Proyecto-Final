@@ -1,31 +1,20 @@
 import React, { useState } from "react";
-import { Container, Form ,} from "react-bootstrap";
+import { Container, Form, } from "react-bootstrap";
 import Swal from "sweetalert2";
-import { validateNombreDueño, validateNombreMascota, validateHorario,validateRaza } from "../../helpers/ValidateFields";
-
-
-
-
-
+import { validateNombreDueño, validateNombreMascota, validateHorario, validateRaza } from "../../helpers/ValidateFields";
 
 
 
 const CrearTurno = ({ URL }) => {
   //States 
-  const [nombreDueño, setNombreDueño] = useState("")
-  const [nombreMascota, setNombreMascota] = useState("")
-  const [horario, setHorario] = useState("")
-  const [raza, setRaza] = useState("")
-  
-
-
-
+  const [nombreDueño, setNombreDueño] = useState("");
+  const [nombreMascota, setNombreMascota] = useState("");
+  const [horario, setHorario] = useState(new Date());
+  const [raza, setRaza] = useState("");
 
   // Funcion para guardar los datos o crear el producto 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-  
 
     // validar los campos
 
@@ -34,10 +23,7 @@ const CrearTurno = ({ URL }) => {
       !validateNombreMascota(nombreMascota) ||
       !validateHorario(horario) ||
       !validateRaza(raza)
-      
     ) {
-      console.log("se crea turno " , nombreDueño,nombreMascota );
-
       Swal.fire("Ops!", " Some data is invalid.", "error");
       return;
     }
@@ -50,7 +36,7 @@ const CrearTurno = ({ URL }) => {
       horario,
       raza
     }
-   
+
 
     Swal.fire({
       title: 'Are you sure?',
@@ -79,13 +65,6 @@ const CrearTurno = ({ URL }) => {
     });
   };
 
-
-      
-
-  
-
-
-
   return (
     <div>
       <Container className="py-5">
@@ -96,10 +75,14 @@ const CrearTurno = ({ URL }) => {
         <Form className="my-5" onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Nombre Del Dueño</Form.Label>
+
+
             <Form.Control
               type="text"
               placeholder="Ej: Nombre y Apellido"
-              onChange={({ target }) => setNombreDueño(target.value)}/>
+              onChange={({ target }) => setNombreDueño(target.value)}
+            />
+
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -109,18 +92,17 @@ const CrearTurno = ({ URL }) => {
               placeholder="nombre o apodo"
               onChange={({ target }) => setNombreMascota(target.value)} />
           </Form.Group>
-          
+
           <Form.Group className="mb-3" controlId="formBasicPassword">
             <Form.Label>Horario</Form.Label>
-            <Form.Control  onChange={({ target }) => setHorario(target.value)}
-            
-            type="date"
-             min="2022-05-01"
-             max="2024-01-01"
-            />
-            
+            <Form.Control onChange={({ target }) => setHorario(target.value)}
 
-             </Form.Group>
+              type="date"
+              min="2022-05-01"
+              max="2024-01-01"
+              highlightDates={(new Date())}
+            />
+          </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicCheckbox">
             <Form.Label>Tipo Raza</Form.Label>
             <Form.Select onChange={({ target }) => setRaza(target.value)} >

@@ -1,0 +1,15 @@
+.information-text-color {
+    color: #feba0b;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.services-card-img {
+        object-fit: cover;
+        width: 100% !important;
+        height: 100%;
+}
+
+.services-bg-card {
+    background-color: #feba0b;
+}

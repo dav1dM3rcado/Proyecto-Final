@@ -1,3 +1,5 @@
+
+
 // Reg expressions
 const regExpNombreDueño = /^[A-Za-z\s?]+$/;
 const regExpNombreMascota = /^[A-Za-z\s?]+$/;
@@ -11,10 +13,14 @@ const regExpContraseña = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,14}$/;
 // Functions to validate
 export const validateNombreDueño = (field) => {
   if (
-    regExpNombreDueño.test(field) && field.trim() !== "") {
+    regExpNombreDueño.test(field)  && field.trim() !== "" ) {
+    
     return true;
+ 
   } else {
+
     return false;
+    
   }
 };
 
