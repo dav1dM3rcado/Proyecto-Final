@@ -1,0 +1,41 @@
+{
+  "turnos": [
+    {
+      "nombreDueño": "ramiro",
+      "nombreMascota": "pepe",
+      "horario": "2022-02-23T22:00",
+      "raza": "perro",
+      "id": 1
+    },
+    {
+      "nombreDueño": "dada",
+      "nombreMascota": "dads",
+      "horario": "2022-02-21T23:20",
+      "raza": "perro",
+      "id": 2
+    },
+    {
+      "nombreDueño": "sadsad",
+      "nombreMascota": "asdasd",
+      "horario": "2022-02-23",
+      "raza": "gato",
+      "id": 3
+    },
+    {
+      "nombreDueño": "adsdsa",
+      "nombreMascota": "asdsad",
+      "horario": "10:36",
+      "raza": "perro",
+      "id": 4
+    },
+    {
+      "nombreDueño": "asdsa",
+      "nombreMascota": "asdas",
+      "horario": "2023-12-14",
+      "raza": "gato",
+      "id": 5
+    }
+  ]
+}
+
+

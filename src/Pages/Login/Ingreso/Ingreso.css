@@ -1,0 +1,50 @@
+
+
+.box{
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 20px 1px rgb(131, 131, 131);
+  margin-top: 10px;
+}
+
+
+
+.imagenl{
+  display: flex;
+  flex-direction: column;
+
+ 
+}
+
+.logincarusel{
+  box-shadow: 0 0 20px 1px rgb(131, 131, 131);
+  margin: 40px 0 20px 0;
+  
+  
+
+ 
+  
+}
+
+.Opcionesdeingreso{
+text-align: center;
+font-size: 20px;
+}
+
+.IconL{
+position: relative;
+font-size: 40px;
+}
+
+.fontAIconL{
+text-align: center;
+color:rgb(131, 131, 131);
+}
+
+.checkboxL{
+color: black;
+}
+
+.tx-carusel{
+font-size: 20px;
+}

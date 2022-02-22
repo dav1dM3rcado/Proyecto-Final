@@ -3,13 +3,7 @@
 }
 
 .Registro {
-  min-width: 100vh;
-  min-height: 100vh;
-  background: linear-gradient(rgba(5, 7, 12, 0.60), rgba(5, 7, 12, 0.60)),
-    url(../../Assets/Img/imagenLogin1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content: center;
+ background-color: black;
 }
 
 
@@ -23,6 +17,7 @@
 
 .Rlabel {
   color: white;
+  font-size: 20px;
 }
 
 
@@ -38,14 +33,23 @@
 }
 
 .TituloR {
-  color: #feba0b;
+  color:#feba0b;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   font-size: 100px;
+}
+
+.DatosRegistro{
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .ImputiC{
@@ -120,5 +124,14 @@ background-color: black;
 color: white;	
 box-shadow: 3px 0 px 30 rgba(163, 163, 163, 1);
 }
-  
 
+hr{
+  height: 0px; 
+  border: none; 
+  border-top: 2px solid black;
+
+}
+
+.checkboxR{
+color: white;
+}

@@ -1,0 +1,250 @@
+
+
+/* Background Colors */
+.bg-yellow {
+    background-color: #ecd078 !important;
+  }
+  
+  .bg-orange {
+    background-color: #d95b43 !important;
+  }
+  
+  .bg-red {
+    background-color: #c02942 !important;
+  }
+  
+  .bg-gray {
+    background-color: #53777a !important;
+  }
+  
+  /* Button yellow */
+  .btn-yellow {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #ecd078;
+    color: #ecd078;
+  }
+  .btn-yellow:hover {
+    color: #fff;
+  }
+  .btn-yellow:hover:after {
+    width: 100%;
+  }
+  .btn-yellow:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #ecd078;
+  }
+  
+  /* Button orange */
+  .btn-orange {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #d95b43;
+    color: #d95b43;
+  }
+  .btn-orange:hover {
+    color: #fff;
+  }
+  .btn-orange:hover:after {
+    width: 100%;
+  }
+  .btn-orange:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #d95b43;
+  }
+  
+  /* Button red */
+  .btn-red {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #c02942;
+    color: #c02942;
+  }
+  .btn-red:hover {
+    color: #fff;
+  }
+  .btn-red:hover:after {
+    width: 100%;
+  }
+  .btn-red:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #c02942;
+  }
+  
+  /* Button gray */
+  .btn-gray {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #53777a;
+    color: #53777a;
+  }
+  .btn-gray:hover {
+    color: #fff;
+  }
+  .btn-gray:hover:after {
+    width: 100%;
+  }
+  .btn-gray:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #53777a;
+  }
+  
+  /* Logo */
+  .logo {
+    font-family: "Lobster", cursive;
+    font-size: 30px !important;
+    color: #40270e !important;
+  }
+  
+  /* Truncate img link */
+  .truncate-img-link {
+    overflow: hidden;
+    /* width: 600px; cambiando esto elegimos el ancho del texto */
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1; /*cambiando este numero elegimos la cantidad de filas que queremos que muestre el texto*/
+  }
+  
+  /* No products found */
+  .no-products-found {
+    height: 55vh !important;
+  }
+  
+  /* SWEETALERT2 CUSTOM COLOR */
+  
+  .swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #ecd078 !important;
+    color: #fff;
+    font-size: 1.0625em;
+  }
+  
+  .swal2-icon.swal2-success {
+    border-color: #ecd078 !important;
+    color: #ecd078 !important;
+  }
+  
+  .swal2-icon.swal2-success .swal2-success-ring {
+    position: absolute;
+    z-index: 2;
+    top: -0.25em;
+    left: -0.25em;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    border: 0.25em solid rgba(236, 209, 120, 0.308) !important;
+    border-radius: 50%;
+  }
+  
+  .swal2-icon.swal2-success [class^="swal2-success-line"] {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    height: 0.3125em;
+    border-radius: 0.125em;
+    background-color: #ecd078 !important;
+  }
+  
+  .swal2-icon.swal2-warning {
+    border-color: #ecd078 !important;
+    color: #ecd078 !important;
+  }
+  
+  .swal2-styled.swal2-cancel {
+    background-color: #c02942 !important;
+    transition: all 300ms ease;
+  }
+  
+  .swal2-styled.swal2-default-outline:focus {
+    box-shadow: 0 0 0 3px rgb(236, 209, 120) !important;
+  }
+  
+  .swal2-styled.swal2-confirm:focus {
+    box-shadow: 0 0 0 3px rgb(236, 209, 120) !important;
+  }
+  
+  /* Cards-img */
+  .img-fluid {
+    height: 45vh !important;
+    object-fit: cover;
+  }
+  
