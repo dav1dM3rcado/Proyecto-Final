@@ -1,11 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Cards from "./components/Cards.js";
+
+import Ss from "./components/Ss.js";
 
 function App() {
   return (
     <div>
-      <Cards />
+      <Ss />
     </div>
   );
 }
