@@ -48,3 +48,28 @@ color: black;
 .tx-carusel{
 font-size: 20px;
 }
+
+.btn-ingresar{
+  background-color: #feba0b;
+  color: white;
+  min-width: 130px;
+  height: 40px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  overflow: hidden;
+  border: 2px solid #feba0b;
+}
+
+.btn-ingresar:hover{
+background-color: white;
+color: #feba0b;
+}
+
+

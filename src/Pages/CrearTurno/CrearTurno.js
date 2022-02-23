@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Form, } from "react-bootstrap";
 import Swal from "sweetalert2";
 import { validateNombreDueño, validateNombreMascota, validateHorario, validateRaza } from "../../helpers/ValidateFields";
+import "../../Styles/GeneralStyles.css";
 
 
 
@@ -115,7 +116,7 @@ const CrearTurno = ({ URL }) => {
             </Form.Select>
           </Form.Group>
           <div className="text-end">
-            <button className="btn-yellow">Reservar</button>
+            <button className="btn-reservar">Reservar</button>
           </div>
         </Form>
       </Container>

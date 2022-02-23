@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Container, Form } from "react-bootstrap";
 import { useNavigate, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
-import { validateNombreDueño, validateNombreMascota, validateHorario, validateRaza } from "../../helpers/ValidateFields";
+import { validateUsuario, validateNombreApellido, validarContraseña , validateFechaNacimiento, validateEmail , validateCelular } from "../../helpers/ValidateFields";
 
 
 const EditarTurno = ({ URL, getApi }) => {

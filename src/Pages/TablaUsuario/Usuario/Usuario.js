@@ -5,16 +5,16 @@ import Swal from "sweetalert2";
 
 
 
-const Turno = ({ turno, URL, getApi }) => {
+const Usuario = ({ turno, URL, getApi }) => {
 
   const handleDelete = (id) => {
 
     Swal.fire({
-      title: 'Estas Seguro/a ?',
-      text: "Perderas el turno elegido !!",
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
       icon: 'warning',
       showCancelButton: true,
-      confirmButtonText: 'Eliminar',
+      confirmButtonText: 'Dalete',
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
@@ -26,7 +26,7 @@ const Turno = ({ turno, URL, getApi }) => {
 
           });
           if (res.status === 200) {
-            Swal.fire('Eliminado !', 'Su turno fue Carcelado!', 'success');
+            Swal.fire('Dalated !', 'Your file has been Dalated !.', 'success');
             getApi();
 
           }
@@ -44,16 +44,18 @@ const Turno = ({ turno, URL, getApi }) => {
 
     <tr>
       <td>{turno.id}</td>
-      <td>{turno.nombreDueño}</td>
-      <td>{turno.nombreMascota}</td>
-      <td>{turno.horario}</td>
-      <td>{turno.raza}</td>
+      <td>{turno.usuario}</td>
+      <td>{turno.nombreapellido}</td>
+      <td>{turno.contraseña}</td>
+      <td>{turno.fechanacimiento}</td>
+      <td>{turno.email}</td>
+      <td>{turno.celular}</td>
       <td className="w-25">
         <div className="d-flex justify-content-center">
-          <Link to={`/turno/editar/${turno.id}`} className="btn-editar  text-decoration-none text-center mx-1">Editar Turno</Link>
+          <Link to={`/usuario/editar/${turno.id}`} className="btn-editar   text-decoration-none text-center mx-1">Editar Usuario</Link>
           <button className="btn-borrar text-decoration-none text-center mx-1"
             onClick={() => handleDelete(turno.id)} >
-            Borrar turno</button>
+            Borrar Usuario</button>
         </div>
       </td>
     </tr>
@@ -62,4 +64,4 @@ const Turno = ({ turno, URL, getApi }) => {
   );
 };
 
-export default Turno;
+export default Usuario;

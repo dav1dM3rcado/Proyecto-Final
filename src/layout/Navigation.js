@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 const Navigation = () => {
   return (
     <div>
-      <Navbar className="bg-yellow" expand="lg">
+      <Navbar className="navbar" expand="lg">
         <Container>
           <Navbar.Brand className="logo" href="/">
           Vet Rolling
@@ -17,7 +17,7 @@ const Navigation = () => {
               <Link className="nav-link" to="/" >Inicio</Link>
               <Link  className="nav-link" to="/turno/tabla">Turnos</Link>
               <Link  className="nav-link" to="/Login">Login</Link>
-            
+              <Link  className="nav-link" to="/Usuario/TablaUsuario">Usuario</Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

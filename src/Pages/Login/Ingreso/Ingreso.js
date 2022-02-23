@@ -78,14 +78,12 @@ const onChangeTerminos = (e) => {
                   label="Recordar mis datos" />
                 </Form.Group>  
                 <div>
-                  <Button variant="primary mb-3" type="submit">
-                  
-                    Ingresar
-                  </Button>
+                <Link to="/Login/DatosdeUsuario" className="btn-ingresar text-decoration-none text-center">Ingresar </Link>
+          
                 </div>
-                <Link className="nav-link" to="/Registro">Olvide mi Contraseña</Link>
+                <Link className="nav-link" to="">Olvide mi Contraseña</Link>
 
-                <Link className="nav-link" to="/Login/Registro">Registro</Link>
+                <Link className="nav-link" to="/Login/CrearUsuario">Registro</Link>
                 <hr className='mb-3'/>
                 <div className='Opcionesdeingreso'>
                   <p className="text-secondary my-4">O ingresá con</p>

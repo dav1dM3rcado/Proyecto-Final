@@ -1,0 +1,176 @@
+/* boton reservar */
+.btn-reservar {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #feba0b;
+  color: #feba0b;
+}
+.btn-reservar:hover {
+  color: #fff;
+}
+.btn-reservar:hover:after {
+  width: 100%;
+}
+.btn-reservar:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #feba0b;
+}
+
+/* boton editar */
+
+.btn-editar {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #53c0ff;
+  color: #53c0ff;
+}
+.btn-editar:hover {
+  color: #fff;
+}
+.btn-editar:hover:after {
+  width: 100%;
+}
+.btn-editar:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #53c0ff;
+}
+
+/* boton borrar */
+
+.btn-borrar {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #cd003d;
+  color: #cd003d;
+}
+.btn-borrar:hover {
+  color: #fff;
+}
+.btn-borrar:hover:after {
+  width: 100%;
+}
+.btn-borrar:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #cd003d;
+}
+
+  
+  /* SWEETALERT2 CUSTOM COLOR */
+  
+  .swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #feba0b !important;
+    color: #fff;
+    font-size: 1.0625em;
+  }
+  
+  .swal2-icon.swal2-success {
+    border-color: #feba0b !important;
+    color: #feba0b !important;
+  }
+  
+  .swal2-icon.swal2-success .swal2-success-ring {
+    position: absolute;
+    z-index: 2;
+    top: -0.25em;
+    left: -0.25em;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    border: 0.25em solid rgba(236, 209, 120, 0.308) !important;
+    border-radius: 50%;
+  }
+  
+  .swal2-icon.swal2-success [class^="swal2-success-line"] {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    height: 0.3125em;
+    border-radius: 0.125em;
+    background-color: #c02942 !important;
+  }
+  
+  .swal2-icon.swal2-warning {
+    border-color: #c02942 !important;
+    color: #c02942 !important;
+  }
+  
+  .swal2-styled.swal2-cancel {
+    background-color: #c02942 !important;
+    transition: all 300ms ease;
+  }
+  
+  .swal2-styled.swal2-default-outline:focus {
+    box-shadow: 0 0 0 3px #feba0b!important;
+  }
+  
+  .swal2-styled.swal2-confirm:focus {
+    box-shadow: 0 0 0 3px #feba0b !important;
+  }
+  
+  /* Cards-img */
+  .img-fluid {
+    height: 45vh !important;
+    object-fit: cover;
+  }
+  
+

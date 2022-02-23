@@ -1,0 +1,43 @@
+.Form-Registro{
+  box-shadow: 0 0 20px 1px rgb(131, 131, 131);
+}
+
+.DatosRegistro{
+text-align: center;
+}
+
+
+/*Boton registro */
+
+.boton-registro{
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+.btn-registro{
+  background-color: #feba0b;
+  color: white;
+  min-width: 130px;
+  height: 40px;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  overflow: hidden;
+  border: 2px solid #feba0b;
+ text-align: center;
+}
+
+.btn-registro:hover{
+background-color: white;
+color: #feba0b;
+}
+
+.checkboxR{
+  color: #feba0b;
+  }

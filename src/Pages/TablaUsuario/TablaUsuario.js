@@ -1,16 +1,16 @@
 import React from 'react';
 import { Container, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Turno from "./Turnos/Turno";
+import Usuario from "./Usuario/Usuario";
 
 
-const TablaTurnos = ({turnos , URL, getApi}) => {
+const TablaUsuario = ({turnos , URL, getApi}) => {
     return (
         <div>
              <Container className="py-5">
         <div className="d-flex align-items-center justify-content-between">
-          <h1>Tabla de Turnos</h1>
-          <Link to="/turno/crear" className="btn-reservar text-decoration-none text-center">Reservar Turno </Link>
+          <h1>Tabla de Usuario</h1>
+          <Link to="/Login/CrearUsuario" className="btn-reservar text-decoration-none text-center">Crear Usuario </Link>
         </div>
         <hr />
         {/* Tabla de turnos */}
@@ -19,16 +19,16 @@ const TablaTurnos = ({turnos , URL, getApi}) => {
             <thead>
               <tr>
                 <th>N°.</th>
-                <th>Dueño </th>
-                <th>Mascota</th>
-                <th>Horario</th>
-                <th>Raza</th>
-                <th>Turnos</th>
+                <th>Usuario </th>
+                <th>Nombre y Apellido</th>
+                <th>Fecha de Nacimiento</th>
+                <th>email</th>
+                <th>Celular</th>
               </tr>
             </thead>
             <tbody>
               {turnos.map((turno) => (
-                <Turno key={turno.id}
+                <Usuario key={turno.id}
                   turno={turno}
                   URL={URL}
                   getApi={getApi} />
@@ -39,8 +39,8 @@ const TablaTurnos = ({turnos , URL, getApi}) => {
           
           :
           <div className="no-products-found d-flex align-items-center justify-content-center">
-            {/* No turno found message */}
-            <h1>🐾 🐕  No hay Turnos Reservados 🐈  🐾 </h1>
+            {/* No products found message */}
+            <h1>🥐 No products found ☕</h1>
           </div> 
         }
       </Container>
@@ -49,4 +49,4 @@ const TablaTurnos = ({turnos , URL, getApi}) => {
     );
 };
 
-export default TablaTurnos;
+export default TablaUsuario;
