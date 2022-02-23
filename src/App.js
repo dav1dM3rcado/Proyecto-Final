@@ -1,12 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-import Ss from "./components/Ss.js";
+import Error from "./components/Error.js";
 
 function App() {
   return (
     <div>
-      <Ss />
+      <Error />
     </div>
   );
 }

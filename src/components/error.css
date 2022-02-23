@@ -1,0 +1,10 @@
+div {
+  background-color: black;
+  width: 100%;
+}
+img {
+  width: 720px;
+  height: auto;
+  margin: auto;
+  display: block;
+}
