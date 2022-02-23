@@ -1,6 +1,6 @@
 import React from "react";
-import "./style/CoverHome.css";
-import cover from "./img/posiblePortada2.jpg";
+import "../style/CoverHome.css";
+import cover from "../img/posiblePortada2.jpg";
 
 const CoverHome = () => {
   return (
