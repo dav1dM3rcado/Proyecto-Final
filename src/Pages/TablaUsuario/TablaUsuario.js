@@ -21,6 +21,7 @@ const TablaUsuario = ({turnos , URL, getApi}) => {
                 <th>N°.</th>
                 <th>Usuario </th>
                 <th>Nombre y Apellido</th>
+                <th>Contraseña</th>
                 <th>Fecha de Nacimiento</th>
                 <th>email</th>
                 <th>Celular</th>
@@ -29,7 +30,7 @@ const TablaUsuario = ({turnos , URL, getApi}) => {
             <tbody>
               {turnos.map((turno) => (
                 <Usuario key={turno.id}
-                  turno={turno}
+                turno={turno}
                   URL={URL}
                   getApi={getApi} />
               ))}

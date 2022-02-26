@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Col, Button} from "react-bootstrap";
-import "./style/MainStyle.css"
+import "../style/MainStyle.css"
 
 const ServiceCard = () => {
     return (

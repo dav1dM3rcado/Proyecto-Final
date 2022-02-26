@@ -174,3 +174,58 @@
   }
   
 
+    
+  /* No products found */
+  .no-products-found {
+    height: 55vh !important;
+  }
+
+  .navbar{
+    background-color: rgb(0, 0, 0 , 0.70) !important;
+    color: #feba0b;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+   }  
+
+.nav-link.na{
+color:  white!important;
+}
+
+
+
+.navbar-brand{
+color: white !important;
+font-size: 40px;
+}
+.btn-burger{
+color: #feba0b !important; 
+border-color: #feba0b !important;
+border-width: 2px;
+}
+
+
+/* Footter */
+
+.footer {
+ background-color: rgb(0, 0, 0 , 0.70);
+}
+
+.copyr{
+color: white !important;
+}
+
+.temas{
+padding-top: 15px !important;
+font-size: 20px;
+color: white;
+}
+
+.f1{
+text-align: center;
+}
+
+.Acercade{
+text-align: center;
+color: white;
+}

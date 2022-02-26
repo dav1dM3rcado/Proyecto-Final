@@ -5,8 +5,12 @@ const regExpNombreDueño = /^[A-Za-z\s?]+$/;
 const regExpNombreMascota = /^[A-Za-z\s?]+$/;
 const regExpHorario =  /^\d{4}([\-/.])(0?[1-9]|1[1-2])\1(3[01]|[12][0-9]|0?[1-9])$/;
 const regExpRaza = /^[A-Za-z\-\s?]+$/;
-const regExpEmail = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-const regExpContraseña = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,14}$/;
+const regExpEmail = /^[A-Za-z\s?]+$/;
+const regExpContraseña = /^[A-Za-z\s?]+$/;
+const regExpUsuario = /^[A-Za-z\s?]+$/;
+const regExpNombreApellido = /^[A-Za-z\s?]+$/;
+const regExpFechaNacimiento = /^[A-Za-z\s?]+$/;
+const regExpCelular = /^[A-Za-z\s?]+$/;
 
 
 
@@ -76,4 +80,61 @@ export const validateContraseña= (field) => {
     return false;
   }
 };
+
+export const validateUsuario = (field) => {
+  if (
+    regExpUsuario.test(field)  && field.trim() !== "" ) {
+    
+    return true;
+ 
+  } else {
+
+    return false;
+    
+  }
+};
+
+export const validateNombreApellido = (field) => {
+  if (
+    regExpNombreApellido.test(field)  && field.trim() !== "" ) {
+    
+    return true;
+ 
+  } else {
+
+    return false;
+    
+  }
+};
+
+
+
+export const validateFechaNacimiento = (field) => {
+  if (
+    regExpFechaNacimiento.test(field)  && field.trim() !== "" ) {
+    
+    return true;
+ 
+  } else {
+
+    return false;
+    
+  }
+};
+
+
+
+export const validateCelular = (field) => {
+  if (
+    regExpCelular.test(field)  && field.trim() !== "" ) {
+    
+    return true;
+ 
+  } else {
+
+    return false;
+    
+  }
+};
+
 

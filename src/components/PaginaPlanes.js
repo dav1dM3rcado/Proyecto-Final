@@ -3,8 +3,10 @@ import {  Container } from "react-bootstrap";
 import image1 from "../Assets/image1.jpg";
 import image2 from "../Assets/image2.jpg";
 import image3 from "../Assets/image3.png";
-import image4 from "../Assets/image4.png";
+import image4 from "../Assets/logo-vetplan.png";
 import './PaginaPlanes.css';
+import { Link } from "react-router-dom";
+
 
 const Ss = () => {
   return (
@@ -13,11 +15,14 @@ const Ss = () => {
 
         <h1 className="TituloPlanes">Nuestros Planes para tu Mascorta 🐾 </h1>
         <hr />
+        <div className="Logo-vet py-5 ">
         <img src={image4} />
+
+        </div>
 
 
         <div className="Planes" name="plan1">
-          <img src={image1} className=" img-fluid img-Planes mb-3" />
+          <img src={image1} className=" img-Planes mb-3" />
 
           <p name="plan1">
             Vacunación antirrábica: Las vacunaciones necesarias contra la Rabia.
@@ -35,11 +40,12 @@ const Ss = () => {
             los tratamientos necesarios para la prevención de pulgas y garrapatas
             previniendo así también las enfermedades transmitidas por éstas.
           </p>
-          <button className="btn-Planes1">Consultar</button>
-        </div>
+          <Link to="/PaginaContacto" className="btn-Planes1 text-decoration-none text-center"> Me Interesa </Link>
+
+         </div>
         <hr />
         <div className="Planes">
-          <img src={image3} className=" img-fluid img-Planes my-3" />
+          <img src={image3} className="  img-Planes my-3" />
           <p name="plan2">
             Todas las coberturas incluidas en VetPlan Básico más 3 días de
             hospitalización si es necesario. + Pruebas diagnósticas sin sedación
@@ -56,12 +62,13 @@ const Ss = () => {
             envío a laboratorio anatomopatológico (no incluidos los costes del
             laboratorio externo) Aspiraciones simples para análisis microscópico
           </p>
-          <button className="btn-Planes2">Consultar</button>
+          <Link to="/PaginaContacto" className="btn-Planes2 text-decoration-none text-center"> Me Interesa </Link>
+
         </div>
         <hr />
 
         <div className="Planes" >
-          <img src={image2} className=" img-fluid img-Planes my-3" />
+          <img src={image2} className="img-Planes my-3" />
           <p name="plan3" >
             Todas las incluidas en Vet Plan Básico más VetPlan Plus más 10 días
             de hospitalización si es necesario. + Cirugías menores en general
@@ -88,7 +95,8 @@ const Ss = () => {
             múltiples Extirpación de cadenas mamarias Amputación extremidad
             Uretrotomía perro
           </p>
-        <button className="btn-Planes3">Consultar</button>
+          <Link to="/PaginaContacto" className="btn-Planes3 text-decoration-none text-center"> Me Interesa </Link>
+
         </div>
         <hr />
 

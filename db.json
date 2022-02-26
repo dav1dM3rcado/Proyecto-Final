@@ -1,3 +1,17 @@
 {
-  "turnos": []
+  "turnos": [
+  
+  ],
+  
+  "usuarios": [{
+    
+      "usuario": "21321",
+      "nombreApellido": "asdasd",
+      "contraseña": "sadsa123As",
+      "fechaNacimiento": "asdsad",
+      "email": "asdsa@sadsadsa",
+      "celular": "154064742",
+      "id": 1
+  }  
+  ]
 }

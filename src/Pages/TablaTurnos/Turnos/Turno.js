@@ -40,25 +40,26 @@ const Turno = ({ turno, URL, getApi }) => {
 
   }
   return (
+    <div>
+  
 
-
-    <tr>
-      <td>{turno.id}</td>
-      <td>{turno.nombreDueño}</td>
-      <td>{turno.nombreMascota}</td>
-      <td>{turno.horario}</td>
-      <td>{turno.raza}</td>
-      <td className="w-25">
-        <div className="d-flex justify-content-center">
-          <Link to={`/turno/editar/${turno.id}`} className="btn-editar  text-decoration-none text-center mx-1">Editar Turno</Link>
-          <button className="btn-borrar text-decoration-none text-center mx-1"
-            onClick={() => handleDelete(turno.id)} >
-            Borrar turno</button>
-        </div>
-      </td>
-    </tr>
-
-
+        <tr>
+          <td>{turno.id}</td>
+          <td>{turno.nombreDueño}</td>
+          <td>{turno.nombreMascota}</td>
+          <td>{turno.horario}</td>
+          <td>{turno.raza}</td>
+          <td className="w-25">
+            <div className="d-flex justify-content-center">
+              <Link to={`/turno/editar/${turno.id}`} className="btn-editar  text-decoration-none text-center mx-1">Editar Turno</Link>
+              <button className="btn-borrar text-decoration-none text-center mx-1"
+                onClick={() => handleDelete(turno.id)} >
+                Borrar turno</button>
+            </div>
+          </td>
+        </tr>
+      
+    </div>
   );
 };
 

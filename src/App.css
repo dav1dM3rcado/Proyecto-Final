@@ -1,17 +1,7 @@
 
-/* Background Colors */
-.footer {
-    background-color: #feba0b !important;
-  }
- .navbar{
-  background-color: #feba0b !important;
- }  
-  
+main{
+padding-top: 101px;
+}
 
-  
-  /* No products found */
-  .no-products-found {
-    height: 55vh !important;
-  }
   
   

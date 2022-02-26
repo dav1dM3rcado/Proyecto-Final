@@ -42,7 +42,7 @@ const onChangeTerminos = (e) => {
   return (
     <div>
       <div className="d-flex flex-column justify-content-center boxc py-5 mx-5">
-        <h1>Todos los Turnos </h1>
+        <h1 className="mx-5">Bienvenidos !! </h1>
         <hr />
         <div>
           <Row className='my-3'>
@@ -81,9 +81,9 @@ const onChangeTerminos = (e) => {
                 <Link to="/Login/DatosdeUsuario" className="btn-ingresar text-decoration-none text-center">Ingresar </Link>
           
                 </div>
-                <Link className="nav-link" to="">Olvide mi Contraseña</Link>
+                <Link className="nav-link login" to="">Olvide mi Contraseña</Link>
 
-                <Link className="nav-link" to="/Login/CrearUsuario">Registro</Link>
+                <Link className="nav-link login" to="/Login/CrearUsuario">Registro</Link>
                 <hr className='mb-3'/>
                 <div className='Opcionesdeingreso'>
                   <p className="text-secondary my-4">O ingresá con</p>

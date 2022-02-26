@@ -4,6 +4,8 @@
 
 .img-Planes {
   box-shadow: 0 0 20px 1px rgb(131, 131, 131);
+  height: 100%;
+  width: 100%;
 }
 
 .Planes {
@@ -74,4 +76,9 @@
 .btn-Planes3:hover {
   background-color: white;
   color: #a7a800;
+}
+
+
+.Logo-vet{
+text-align: center;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import publicidad from "./img/publicidad.video.mp4"
-import "./style/PublicidadVideo.css"
+import publicidad from "../img/publicidad.video.mp4"
+import "../style/PublicidadVideo.css"
 
 const Publicidad = () => {
     return (

@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 
 
-const Usuario = ({ turno, URL, getApi }) => {
+const Usuario = ({ turno , URL, getApi }) => {
 
   const handleDelete = (id) => {
 
@@ -45,9 +45,9 @@ const Usuario = ({ turno, URL, getApi }) => {
     <tr>
       <td>{turno.id}</td>
       <td>{turno.usuario}</td>
-      <td>{turno.nombreapellido}</td>
+      <td>{turno.nombreApellido}</td>
       <td>{turno.contraseña}</td>
-      <td>{turno.fechanacimiento}</td>
+      <td>{turno.fechaNacimiento}</td>
       <td>{turno.email}</td>
       <td>{turno.celular}</td>
       <td className="w-25">

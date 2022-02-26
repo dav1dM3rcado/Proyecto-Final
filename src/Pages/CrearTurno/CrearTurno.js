@@ -40,11 +40,11 @@ const CrearTurno = ({ URL }) => {
 
 
     Swal.fire({
-      title: 'Are you sure?',
-      text: "You won't be able to revert this!",
+      title: 'Seguro que eliges este turno?',
+      text: "No podras elegir otro !",
       icon: 'warning',
       showCancelButton: true,
-      confirmButtonText: 'Save',
+      confirmButtonText: 'Reservado',
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
@@ -56,7 +56,7 @@ const CrearTurno = ({ URL }) => {
             body: JSON.stringify(newTurno)
           });
           if (res.status === 201) {
-            Swal.fire('Created!', 'Your file has been Created.', 'success');
+            Swal.fire('Turno Guardado!', ' Tu turno fue reservado .', 'success');
           }
         } catch (error) {
           console.log(error);
@@ -67,8 +67,8 @@ const CrearTurno = ({ URL }) => {
   };
 
   return (
-    <div>
-      <Container className="py-5">
+    <div  >
+      <Container className="py-5 cuerpo">
         <h1>Todos los Turnos </h1>
         <hr />
         {/* Form Product */}
@@ -82,6 +82,7 @@ const CrearTurno = ({ URL }) => {
               type="text"
               placeholder="Ej: Nombre y Apellido"
               onChange={({ target }) => setNombreDueño(target.value)}
+        
             />
 
           </Form.Group>
@@ -91,7 +92,8 @@ const CrearTurno = ({ URL }) => {
             <Form.Control
               type="text"
               placeholder="nombre o apodo"
-              onChange={({ target }) => setNombreMascota(target.value)} />
+              onChange={({ target }) => setNombreMascota(target.value)}
+               />
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">

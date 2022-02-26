@@ -11,6 +11,7 @@ import EditarTurno from './Pages/EditarTurno/EditarTurno';
 import EditarUsuario from './Pages/EditarTurno/EditarTurno';
 import Home from "./home/Home";
 import PaginaPlanes from "./components/PaginaPlanes";
+import PaginaContacto from "./Pages/PaginaContacto/PaginaContacto";
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -18,12 +19,14 @@ import { useEffect, useState } from "react";
 
 function App() {
 
-  const [turnos, setTurnos] = useState([])
+  const [turnos, setTurnos] = useState([]);
 
   const URL = process.env.REACT_APP_API_VETROLLING;
 
   useEffect(() => {
-    getApi()
+    getApi();
+
+  
 
   }, [])
 
@@ -31,15 +34,17 @@ function App() {
     try {
       const res = await fetch(URL);
       const turnoApi = await res.json();
-      setTurnos(turnoApi)
+      
+       setTurnos(turnoApi);
+
     } catch (error) {
       console.log(error);
+}
+}
 
-    }
-  }
 
 
-  return (
+    return (
 
 
     <div>
@@ -56,6 +61,7 @@ function App() {
             <Route exact path="/usuario/TablaUsuario" element={<TablaUsuario  turnos={turnos} URL={URL} getApi={getApi} />} />
             <Route exact path="/login" element={<Ingreso />} />
             <Route exact path="/PaginaPlanes" element={<PaginaPlanes />} />
+            <Route exact path="/PaginaContacto" element={<PaginaContacto />} />
 
           </Routes>
         </main>
@@ -68,5 +74,7 @@ function App() {
 
 
 };
+
+
 
 export default App;
